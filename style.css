@@ -1,0 +1,99 @@
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+    position: initial;
+    width: 40px;
+    display: inline;
+}
+
+love {
+    background: green;
+    position: initial;
+    width: 40px;
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hint_title {
+    font-weight: 700;
+}
+
+img {
+    width: 100px;
+}
+
+.my_cat {
+    width: 200px;
+    height: 50px;
+}
+
+.my_cat2 {
+    width: 300px;
+}
+
+.parent {
+    border: 1px solid #aa2525;
+    display: block;
+}
+
+.child_first {
+    border: solid #1ed82e;
+}
+
+.child_second {
+    border: solid #510e9e;
+    margin: 15px;
+    margin-left: 5px;
+    padding: 10px 15px;
+    padding-top: 5px;
+}
+
+.child_second:hover {
+    border: solid #e70c85;
+}
+
+.child_default {
+    border: solid #baee40;
+}
+
+.child_first,
+.child_second {
+    /* width: 100px; */
+}
+
+.parent div {
+    width: 100px;
+    border-width: 1px;
+}
+
+.my_cat2 {
+    width: 300px;
+}
+
+.my_cat2 {
+    width: 100px;
+    width: 100%;
+}
+
+img {
+    padding: 20px;
+    margin: 10px;
+}
+
+.link {
+    color: #046635;
+}
+
+.link:hover {
+    color: #c21c6f;
+}
+
+.link:first-child {
+    color: #67c21c;
+}
