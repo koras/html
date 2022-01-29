@@ -1,3 +1,114 @@
+// let dataObject = {
+//     'oil': 100,
+//     'gas': 200,
+//     'shop': [],
+// };
+
+// for (let itemName in dataObject) {
+//     // console.log("itemName  = " + itemName);
+//     // console.log('dataObject.itemName = ' + dataObject);
+//     // console.log('dataObject.itemName = ' + dataObject.itemName);
+//     // console.log("dataObject['itemName'] = " + dataObject[itemName]);
+
+// }
+
+// let dataCopy = {};
+// // ссылка
+// //dataCopy =  dataObject
+
+// // клонирование
+// Object.assign(dataCopy, dataObject)
+// dataCopyClone = dataCopy;
+
+// console.log('dataCopy', dataCopy)
+// dataCopy.db = "mysql";
+// console.log('dataCopy in mysql', dataCopy)
+// console.log('dataObject in mysql', dataObject)
+// delete dataCopy.db;
+
+// console.log('dataCopyClone in mysql', dataCopyClone)
+
+// let productrow = document.getElementById('productrow');
+// let tableDocument = document.getElementById('tableDocument');
+
+// let cloneHtml = productrow.content.cloneNode(true);
+
+// let rowFirst = "Первая ячейка";
+// let rowSecond = "Вторая  ячейка";
+
+
+// function html() {
+//     return `<tr>
+//             <td class="record">${rowFirst}</td>
+//             <td>${rowSecond}</td>
+//             </tr>`;
+// }
+
+let functionGlobal = function() {
+    console.log('Мы вызываем functionGlobal');
+}
+
+
+
+let objectFunctions = {
+    myButton: function() {
+        console.log('меня нажали, ахахаха');
+        // локальная
+        //    functionGlobal();
+        console.log(this);
+    },
+    myButton2: function() {
+        console.log('меня нажали, другая кнопка');
+    },
+    myDelete: () => {
+
+        console.log('Удаление');
+        // глобальная
+        //   functionGlobal();
+        console.log(this);
+    }
+}
+
+
+let elBut = document.getElementById('but');
+let elBut2 = document.getElementById('but2');
+
+
+
+
+
+
+
+elBut.addEventListener('click', objectFunctions.myButton);
+
+// добавляем objectFunctions.myButton2
+elBut2.addEventListener('click', objectFunctions.myButton2);
+
+// Удаляем  objectFunctions.myButton2
+elBut2.removeEventListener('click', objectFunctions.myButton2);
+
+// добавляем objectFunctions.myDelete
+elBut2.addEventListener('click', objectFunctions.myDelete);
+
+
+
+// tableDocument.innerHTML += '  <tr><td class="record">2342342</td><td>13461346</td></tr>'
+// tableDocument.innerHTML += '  <tr><td class="record">2342342</td><td>13461346</td></tr>'
+// tableDocument.innerHTML += '  <tr><td class="record">2342342</td><td>13461346</td></tr>'
+// tableDocument.innerHTML += '  <tr><td class="record">2342342</td><td>13461346</td></tr>'
+//tableDocument.appendChild(cloneHtml)
+//tableDocument.appendChild(cloneHtml)
+//tableDocument.appendChild(cloneHtml)
+//tableDocument.appendChild(cloneHtml)
+//tableDocument.innerHTML += htmlTr
+// tableDocument.appendChild(productrow)
+// tableDocument.appendChild(productrow)
+// tableDocument.appendChild(productrow)
+// tableDocument.appendChild(productrow)
+// tableDocument.appendChild(productrow)
+// tableDocument.appendChild(productrow)
+console.log(12);
+
 //let result = confirm('Удалять ли базу данных?');
 
 // if (result) {

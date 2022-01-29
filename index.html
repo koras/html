@@ -17,119 +17,28 @@
 </head>
 
 <body>
-    <div class="red">привет</div>
-
-    <br/>
-
-    <div>
-        <a class="link" href="#">Моя ссылка</a>
-        <a class="link" href="#">Моя ссылка</a>
-        <a class="link" href="#">Моя ссылка</a>
-        <a class="link" href="#">Моя ссылка</a>
-    </div>
-    <div class="parent" id="elParent">
-        <div id="id1" class="child_first">1</div>
-        <div class="child_first">2</div>
-        <div class="child_second">3</div>
-        <div class="child_second">4</div>
-        <div id="id2" class="child_default">5</div>
-    </div>
-
-    <li>
-        <ol>1</ol>
-        <ol>1</ol>
-        <ol>1</ol>
-    </li>
-
-    <img title="Картинка супер кошечки " src="https://vjoy.cc/wp-content/uploads/2019/11/1a.jpeg" alt="Картинка моей кошечки" />
-
-    <img class="my_cat" title="Картинка супер кошечки " src="https://vjoy.cc/wp-content/uploads/2019/11/1a.jpeg" alt="Картинка моей кошечки" />
-
-    <img class="my_cat2" title="Картинка супер кошечки " src="https://vjoy.cc/wp-content/uploads/2019/11/1a.jpeg" alt="Картинка моей кошечки" />
-
-    <form method="get" name="form1" action="test.html">
-
-        <select name="my_advice">
-            <option value="1" >option 1</option>
-            <option value="2" selected>option 2</option>
-            <option value="3">option 3</option>
-            <option value="4">option 4</option>
-        </select>
-
-        <input name="my_text" type="text" value="поле ввода" placeholder="Здесь пишите какой то текст">
-        <button id="buttonSend">Кнопка отправки на сервер</button>
-    </form>
-
-    <table>
-        <tbody>
+    <table id="producttable">
+        <thead>
             <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <td>UPC_Code</td>
+                <td>Product_Name</td>
             </tr>
+        </thead>
+        <tbody id="tableDocument">
+            <!-- данные будут вставлены сюда -->
         </tbody>
-        <tr>
-            <td width="12px">td 1</td>
-            <td>td 2</td>
-            <td>td 3</td>
-            <td>td 4</td>
-            <td>td 5</td>
-        </tr>
-        <tr>
-            <td>td 1</td>
-            <td>td 2</td>
-            <td>td 3</td>
-            <td>td 4</td>
-            <td>td 5</td>
-        </tr>
-        <tr>
-            <td>td 1</td>
-            <td>td 2</td>
-            <td>td 3</td>
-            <td>td 4</td>
-            <td>td 5</td>
-        </tr>
     </table>
 
-
-    <div style="background: #444444;" class="green">test</div>
-    <div class="green">green</div>
-    <!-- 
-    Здесь мой коммент
-    Здесь будет баннер
--->
-    <love>
-        love
-    </love>
-    <h1>h1</h1>
-    <h2>h2</h2>
-    <h6>h6</h6>
-    <div id="id1">id1</div>
-    <div id="id2">id1</div>
-    <!--    Ещё что-то и так далее -->
-    <div id="id3">id1</div>
-    <div id="id4">id1</div>
-    <span id="hint_title" class="hint_title">span</span>
-    <strong>striong</strong>
-    <b>striong</b>
-
-    <a id="link" title="давай отправим письмо" href="mailto:mail@mail.ru">yandex </a>
-
-    <div>
-        Мой новый текст
-    </div>
+    <button id="but">Нажми меня</button>
+    <button id="but2">Нажми меня 2</button>
 
 
-
-
-    <input type="button" id="elem2" onclick="alert('Было')" value="Нажми меня">
-
-
-    <script language="JavaScript">
-        //   alert("Привет, мир!");
-    </script>
+    <template id="productrow">
+        <tr>
+          <td class="record">2dasfasdf</td>
+          <td>114513451345</td>
+        </tr>
+      </template>
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
