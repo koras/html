@@ -31,6 +31,4 @@ class Button {
         let el = document.getElementById(id);
         el.addEventListener('click', this.setServer);
     }
-
-
 }
